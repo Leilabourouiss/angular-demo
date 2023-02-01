@@ -1,0 +1,9 @@
+<p>ex-pipe-chrono works!</p>
+
+<h1>Chrono</h1>
+
+<p>{{seconde |chrono}}</p>
+
+<button type="button" (click)="chrono()" [disabled]="isPlayed">start</button>
+<button type="button" (click)="chronoPause()" [disabled]="!isPlayed">stop</button>
+<button type="button" (click)="resetChrono()" [disabled]="seconde === 0">reset</button>
