@@ -1,0 +1,17 @@
+<p>demo3 works!</p>
+
+<h2>Demo Pipes</h2>
+
+<p>UpperCase : {{ message | uppercase }}</p>
+<p>LowerCase : {{ message | lowercase }}</p>
+<p>TitleCase : {{ message | titlecase }}</p>
+<p>{{ birthDate }}</p>
+<p>BirthDate : {{ birthDate | date: 'dd/MM/yyyy' }}</p>
+<p>Price : {{ price | currency: 'EUR' }}</p>
+
+<h3>Custom Pipes</h3>
+
+
+<p>{{50 | toTemperature: 'f'}}</p>
+<!-- coucou et hello sont les paramèrtres  -->
+

@@ -1,0 +1,17 @@
+<p>demo2 works!</p>
+
+<h2>Event Binding</h2>
+
+<p>my random number : {{number}}</p>
+
+<!-- bouton random -->
+<button type="button" (click)="randomNumber()" [disabled]="isDisabled">random</button>
+<!-- pour les evenement avec le bouton , il faut mettre () et les évnmnt nous seront proposé -->
+
+<!-- bouton reset: -->
+<button type="button" (click)="resetNumber()">Reset</button>
+
+<!-- bouton pour désactiver ou activer le bouton random -->
+<button type="button" (click)="toggleDisable()">{{isDisabled
+    ? "Enable" : "disable"}}</button>
+<!--  on peut faire un bout de code JS dans les accolades => utilisation du ternaire -->
