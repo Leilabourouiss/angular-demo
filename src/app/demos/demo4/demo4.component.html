@@ -1,0 +1,16 @@
+<p>demo4 works!</p>
+
+<h1>directives style/class</h1>
+
+<h4>ngStyles</h4>
+//ngStyle objet en parametre
+<p [ngStyle]= "currentStyle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit veniam dicta neque nesciunt! Voluptatum neque vel iste veritatis possimus amet dolore nam, excepturi asperiores ab, atque illum quia saepe molestiae.</p>
+
+<button (click)="toggleBold()">bold</button>
+<button (click)="toggleItalic()">iTALIC</button>
+<button (click)="toggleBig()">big</button>
+
+<h4>ngClass</h4>
+<p [ngClass]="{'classActive': isActive}">Lorem ipsum dolor sit amet.</p>
+
+<button (click)="isActive = !isActive">toggle classe</button>

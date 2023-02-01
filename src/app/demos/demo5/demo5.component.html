@@ -1,0 +1,52 @@
+<p>demo5 works!</p>
+
+<h3>Structural Directive</h3>
+
+<h4>NgIf</h4>
+
+<p *ngIf="isOpen;">Message Secret</p>
+<!-- -> remplace le template ngIf -->
+<!-- ngIf: c'est le if comme on ne peut pas coder dans " " -->
+
+<!-- <p *ngIf="!isOpen">il y a un message secret ici</p> -->
+<!-- c'est le contraire il va montrer ce texte si l'utilisateur n'a pas appuyer sur le bouton-->
+
+<!-- Pour le fair en une fois comme dans if else <p *ngIf="isOpen;">Message Secret</p> - le ; est le sinon -->
+
+<ng-template #elseBlock>
+    <!-- permet d'utiliser tous les mots clé sans être une balise HTML -> balise angular pour pouvoir mettre une balise angular -->
+    il y a un message secret ici
+</ng-template>
+
+<button (click)="isOpen = true">Afficher</button>
+<!-- Pas de togle, une fois qu'on appuie il est à true -->
+
+<h4>switch</h4>
+
+<input type="text" [(ngModel)] = "choice" >
+<!-- twowaybinding : entrer et sortir 
+onewaybinding: récupérer qqch dans un attribut ex : [type]= "type" -->
+
+<div [ngSwitch]="choice">
+    <div *ngSwitchCase="1">Pomme</div>
+    <div *ngSwitchCase="2">Poire</div>
+    <div *ngSwitchCase="3">Pêche</div>
+    <div *ngSwitchDefault> entrer 1, 2 ou 3 </div>
+</div>
+
+<h4>ngFor</h4>
+<input type="text" [(ngModel)] = "fruitName">
+<!-- On met un nouvel élèmenet dans fruitName -->
+<button (click)="addFruit()">Add Fruit</button>
+<!-- On ajoute le nouvel elmnt au tableau fruit -->
+<ul>
+    <li *ngFor="let fruit of fruits; index as i; last as last; odd as odd"
+    [ngClass]="{'isActive': last}">
+      <!-- trouver le dernier elmnt de la liste: si c'est le dernier de la liste tu applique une classe -->
+     
+        {{i}} - {{fruit}}
+        <!-- variable fruit accessible que dans li -->
+    </li>
+    <!-- chaque élemnt fruit du tableau fruits -->
+
+</ul>
