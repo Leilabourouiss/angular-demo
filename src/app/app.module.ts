@@ -16,6 +16,8 @@ import { Demo4Component } from './demos/demo4/demo4.component';
 import { Demo5Component } from './demos/demo5/demo5.component';
 import { FormsModule } from '@angular/forms';
 import { ExPipeSpoilerComponent } from './exos/ex-pipe-spoiler/ex-pipe-spoiler.component';
+import { Ex4MenuComponent } from './exos/ex4-menu/ex4-menu.component';
+import { Exo5CoursComponent } from './exos/exo5-cours/exo5-cours.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { ExPipeSpoilerComponent } from './exos/ex-pipe-spoiler/ex-pipe-spoiler.c
     Demo4Component,
     Demo5Component,
     ExPipeSpoilerComponent,
+    Ex4MenuComponent,
+    Exo5CoursComponent,
 
   ],
   imports: [
