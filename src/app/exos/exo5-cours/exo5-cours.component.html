@@ -1,1 +1,20 @@
 <p>exo5-cours works!</p>
+<!-- tableau objet; propriété titre + active ou pas + element -->
+
+<h1>Mes cours favoris: l'accordéon</h1>
+<!-- 
+<div><button ngClass="format" (click)="toggleisOpen()">HTML</button>
+<p ngClass="cacher" *ngIf="isOpen">mettre en page des sites web</p>
+<button ngClass="format" (click)="toggleisOpen2()">CSS</button>
+<p ngClass="cacher" *ngIf="isOpen2">Les rendre plus ou moins beaux</p>
+<button ngClass="format" (click)="toggleisOpen3()">JavaScript</button>
+<p ngClass="cacher" *ngIf="isOpen3">Les rendre dynamiques</p>
+<button ngClass="format" (click)="toggleisOpen4()">C#</button>
+<p ngClass="cacher" *ngIf="isOpen4">Un super langage orienté objet</p>
+</div> -->
+
+<ul>
+    <li *ngFor="let Cours in Cours; index as i; last as last; odd as odd ">
+        {{Cours}}
+    </li>
+</ul>
