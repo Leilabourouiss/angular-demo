@@ -15,6 +15,8 @@ import { ExPipeChronoComponent } from './exos/ex-pipe-chrono/ex-pipe-chrono.comp
 import { Demo4Component } from './demos/demo4/demo4.component';
 import { Demo5Component } from './demos/demo5/demo5.component';
 import { FormsModule } from '@angular/forms';
+import { ExPipeSpoilerComponent } from './exos/ex-pipe-spoiler/ex-pipe-spoiler.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { FormsModule } from '@angular/forms';
     ChronoPipe,
     ExPipeChronoComponent,
     Demo4Component,
-    Demo5Component
+    Demo5Component,
+    ExPipeSpoilerComponent,
+
   ],
   imports: [
     BrowserModule,

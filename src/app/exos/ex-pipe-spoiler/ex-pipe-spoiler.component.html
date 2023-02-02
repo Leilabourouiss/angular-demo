@@ -1,0 +1,11 @@
+<p>ex-pipe-spoiler works!</p>
+
+<h1>Spoiler Alert
+</h1>
+
+<p *ngIf="!isOpen;"> Rien à voir</p>
+
+<p *ngIf="isOpen" ngClass="couleur"> Bambi n'est pas mort à la fin</p>
+
+<button (click)="toggleisOpen()">{{isOpen?"Spoil" : "cacher"}}</button>
+
