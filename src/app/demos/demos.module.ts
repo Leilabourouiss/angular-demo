@@ -8,6 +8,7 @@ import { Demo3Component } from './demo3/demo3.component';
 import { Demo4Component } from './demo4/demo4.component';
 import { Demo5Component } from './demo5/demo5.component';
 import { ToTemperature } from './pipes/to-temperature.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,7 +22,9 @@ import { ToTemperature } from './pipes/to-temperature.pipe';
   ],
   imports: [
     CommonModule,
-    DemosRoutingModule
+    DemosRoutingModule,
+    FormsModule
+    // form module c'est un module de formulaire pour le ngModule et pouvoir introduire fruit (exo 5)
   ]
 })
 export class DemosModule { }

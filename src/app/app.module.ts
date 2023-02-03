@@ -18,31 +18,22 @@ import { FormsModule } from '@angular/forms';
 import { ExPipeSpoilerComponent } from './exos/ex-pipe-spoiler/ex-pipe-spoiler.component';
 import { Ex4MenuComponent } from './exos/ex4-menu/ex4-menu.component';
 import { Exo5CoursComponent } from './exos/exo5-cours/exo5-cours.component';
+import { DemosModule } from './demos/demos.module';
+import { ExosModule } from './exos/exos.module';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Demo1Component,
-    Exo1Component,
-    InputComponent,
-    InfoUserComponent,
-    Demo2Component,
-    Demo3Component,
-    ToTemperature,
-    ChronoPipe,
-    ExPipeChronoComponent,
-    Demo4Component,
-    Demo5Component,
-    ExPipeSpoilerComponent,
-    Ex4MenuComponent,
-    Exo5CoursComponent,
-
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    DemosModule,
+    ExosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

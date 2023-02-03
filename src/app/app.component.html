@@ -1,11 +1,22 @@
-<!-- <app-demo1></app-demo1> -->
-<!-- <app-exo1></app-exo1>
-<app-info-user></app-info-user>
-<app-input></app-input> -->
 
-<!-- <app-demo3/> -->
-<!-- <app-ex-pipe-chrono></app-ex-pipe-chrono> -->
-<!-- <app-demo5></app-demo5> -->
-<!-- <app-ex-pipe-spoiler></app-ex-pipe-spoiler> -->
-<!-- <app-ex4-menu></app-ex4-menu> -->
-<app-exo5-cours></app-exo5-cours>
+<h2>app component</h2>
+<!-- barre de navigation -->
+<!-- <nav>
+    <a href="exo1">exo1</a>
+    <a href="exo5">exo5</a> -->
+    <!-- Avec les balise a on fait des refraiche et on perd des infos comme les inputs et les chronos -->
+    <!-- on va devoir faire un router link: lien que pour naviguer dans l'application et href pour lien externe -->
+<!-- <nav>
+    <a routerLink="exo1">exo1</a>
+    <a routerLink="exo5-cours">exo5</a>
+    <a routerLink="ex-pipe-spoiler">exo spoiler</a>
+    <a routerLink="ex-pipe-chrono">exo chronos</a>
+</nav>  -->
+
+<nav>
+    <app-nav-bar></app-nav-bar>
+</nav>
+
+
+<router-outlet></router-outlet>
+<!-- router outlet pour afficher les component du module démo -->
